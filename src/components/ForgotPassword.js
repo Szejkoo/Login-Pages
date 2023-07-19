@@ -262,7 +262,7 @@ function ForgotPassword() {
                 </InputBtnBox>
               </UpperSection>
               <HelpBox>
-                <Link to={"/SingupPage"} style={Underline}>
+                <Link to={"/SignupPage"} style={Underline}>
                   <Remember>Don't have an account ? Signup</Remember>
                 </Link>
                 <CustoperCare>
