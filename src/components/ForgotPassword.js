@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import BoxHelp from "./BoxHelp";
 
 function ForgotPassword() {
   const {
@@ -182,27 +183,7 @@ function ForgotPassword() {
     gap: 8px;
   `;
   const Remember = styled(TextProperties)``;
-  const CustoperCare = styled.div`
-    display: flex;
-    width: 400px;
-    padding: 4px 6px;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 6px;
-    background: linear-gradient(
-      180deg,
-      rgba(98, 98, 98, 0) 0%,
-      rgba(98, 98, 98, 0.25) 100%
-    );
-  `;
-  const TextOr = styled(TextProperties)`
-    color: #4d4d4d;
-  `;
-  const SecondBoxHelp = styled.div`
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-  `;
+
   const Elipse = styled.div`
     position: absolute;
     top: 5%;
@@ -265,17 +246,7 @@ function ForgotPassword() {
                 <Link to={"/SignupPage"} style={Underline}>
                   <Remember>Don't have an account ? Signup</Remember>
                 </Link>
-                <CustoperCare>
-                  <SecondBoxHelp>
-                    <TextOr>Terms & Conditions</TextOr>
-                  </SecondBoxHelp>
-                  <SecondBoxHelp>
-                    <TextOr>Support</TextOr>
-                  </SecondBoxHelp>
-                  <SecondBoxHelp>
-                    <TextOr>Customer Care</TextOr>
-                  </SecondBoxHelp>
-                </CustoperCare>
+                <BoxHelp />
               </HelpBox>
             </BoxForgotPassword>
           </Frame>
